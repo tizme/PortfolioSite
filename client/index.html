@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+<html ng-app='app'>
+  <head>
+    <meta charset="utf-8">
+    <title>Aaron Manill</title>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script src="angular/angular.js" charset="utf-8"></script>
+    <script src="angular-route/angular-route.js" charset="utf-8"></script>
+    <script src="angular-messages/angular-messages.js"></script>
+    <script src="angular-animate/angular-animate.js"></script>
+    <script src="my_angular/config.js" charset="utf-8"></script>
+    <script src="my_angular/boardFactory.js" charset="utf-8"></script>
+    <script src="my_angular/loginController.js" charset="utf-8"></script>
+    <script src="my_angular/boardController.js" charset="utf-8"></script>
+    <script src="my_angular/Controller2.js" charset="utf-8"></script>
+    <script src="my_angular/Controller3.js" charset="utf-8"></script>
+    <script src="my_angular/Controller5.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="./css/master.css">
+
+
+  </head>
+
+  <body>
+
+    <div id="contentWrapper">
+
+      <div id="navBar">
+
+
+        <div id="navLinks">
+          <a id="homeLink" href="#!/">Home</a>
+          <p class="linkSeperator">|</p>
+          <a id="topicsLink" href="#!/projects">My Projects</a>
+          <p class="linkSeperator">|</p>
+          <a id="topicsLink" href="#!/resume">Resume</a>
+          <p class="linkSeperator">|</p>
+          <a id="topicsLink" target="_blank" href="https://github.com/tizme"><img src="./images/github.png" alt="" height="20" width="20"> GitHub</a>
+          <p class="linkSeperator">|</p>
+          <a id="topicsLink" target="_blank" href="https://www.linkedin.com/in/aaronmanill/"><img src="./images/linkedin.png" alt="" height="20" width="60"></a>
+        </div>
+
+        <div id ="partials" ng-view>
+        <!-- Partial html views here. -->
+        </div>
+    </div>
+  </div>
+  </body>
+</html>

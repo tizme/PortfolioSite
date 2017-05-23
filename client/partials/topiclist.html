@@ -1,0 +1,38 @@
+<div id="topicsMainWrapper">
+  <h1>Available Topics</h2>
+  <input id="topicsSearch" type="text" ng-model="search.topic"  placeholder="Search Topics">
+  <div id="topicsMainDisplay | filter: createdAt">
+    <table id="topicsTable" styel="overflow-y=scroll;">
+      <thead>
+        <th>Category</th>
+        <th>Topic</th>
+        <th>Topic Author</th>
+        <th>Start Date</th>
+      </thead>
+      <tr ng-repeat="topic in topics | filter:search | orderBy: '-createdAt'">
+        <td>{{topic.category}}</td>
+        <td><a href="#!/topic/{{topic._id}}">{{topic.topic}}</a></td>
+        <td class="topicAuthor"><a href="#!/user/{{topic._user._id}}">{{topic._user.name}}</a></td>
+        <td>{{topic.createdAt | date:'medium'}}</td>
+      </tr>
+    </table>
+  </div>
+  <div id="topicCreateWrapper">
+    <form id="topicCreation">
+      <p id="topicPrompt">Create New Topic |</p>
+      <input id="topicInput" type="text" name="" value="" ng-model="newTopic.topic" placeholder="Enter topic here...">
+      <select ng-model="newTopic.category">
+        <option value="News">News</option>
+        <option value="Science">Science</option>
+        <option value="Politics">Politics</option>
+        <option value="Movies">Movies</option>
+        <option value="TV">TV</option>
+        <option value="Music">Music</option>
+        <option value="Video Games">Video Games</option>
+        <option value="Sports">Sports</option>
+        <option value="General">General</option>
+      </select>
+      <button type="submit" name="Submit" ng-click="submitTopic(newTopic)">Submit Topic</button>
+    </form>
+  </div>
+</div>
