@@ -1,5 +1,5 @@
 *{
-  background-color: black;
+
   /*outline: 1px dotted red;*/
   /*margin: auto 0px;*/
   font-family: sans-serif;
@@ -9,7 +9,7 @@
 
 
 body{
-
+      background-color: black;
       background: url(../images/splash2.jpg) no-repeat center center fixed;
       /*background-size: cover;*/
       -webkit-background-size: cover;
