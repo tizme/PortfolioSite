@@ -87,7 +87,7 @@ margin-top: 70px;
   background: url(../images/lightblue.png);
 }
 
-.projects frame{
+#soapbox{
   -ms-zoom: 0.75;
   -moz-transform: scale(0.75);
   -moz-transform-origin: 0 0;
