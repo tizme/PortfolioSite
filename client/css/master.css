@@ -46,7 +46,7 @@ body{
 #homeLink{
   display: inline-block;
   text-decoration: none;
-  color: Red;
+  color: #cc4400;
   /*font-size: 1.5em;*/
   font-weight: bold;
 }
@@ -127,7 +127,7 @@ margin-top: 70px;
   text-align: center;
   width: 22em;
   display: inline-block;
-  color: white;
+  color:  #cc4400;
   vertical-align: top;
 }
 .resume{
@@ -136,7 +136,18 @@ margin-top: 70px;
   position: relative;
   padding-bottom: 2%;
   overflow: hidden;
+  display: block;
 }
+
+.resume a{
+  color: white;
+}
+
+.resume img{
+  width: 80%;
+  height: auto;
+}
+
 .resume iframe{
   text-align: center;
   position: relative;
