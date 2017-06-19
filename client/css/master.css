@@ -20,7 +20,7 @@ body{
 
 }
 body, html{
-  cursor: url(../images/galaga.gif), auto;
+  cursor: url(../images/galaga.gif), pointer;
 }
 
 #contentWrapper{
