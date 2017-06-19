@@ -16,6 +16,7 @@ body{
       -moz-background-size: cover;
       -o-background-size: cover;
       height: 100%;
+      cursor: url(../images/satellite-icon.png), pointer;
 
 }
 
