@@ -1,40 +1,59 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html ng-app='app'>
   <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Aaron Manill</title>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="angular/angular.js" charset="utf-8"></script>
     <script src="angular-route/angular-route.js" charset="utf-8"></script>
     <script src="angular-messages/angular-messages.js"></script>
     <script src="angular-animate/angular-animate.js"></script>
     <script src="my_angular/config.js" charset="utf-8"></script>
-    <link rel="stylesheet" href="./css/master.css">
+    <script src="my_angular/homeController.js" charset="utf-8"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.2.2/angular-materialize.min.js"></script>
 
+    <link rel="stylesheet" href="./css/master.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
   </head>
 
   <body>
 
-    <div id="contentWrapper">
+    <div id="contentWrapper" >
 
-      <div id="navBar">
+      <div id="navBar" >
 
 
-        <div id="navLinks">
-          <a id="homeLink" href="#!/">Home</a>
-          <p class="linkSeperator">|</p>
-          <a id="topicsLink" href="#!/projects">My Projects</a>
-          <p class="linkSeperator">|</p>
-          <a id="topicsLink" href="#!/resume">Resume</a>
-          <p class="linkSeperator">|</p>
-          <a id="topicsLink" target="_blank" href="https://github.com/tizme"><img src="./images/github.png" alt="" height="20" width="20"> GitHub</a>
-          <p class="linkSeperator">|</p>
-          <a id="topicsLink" target="_blank" href="https://www.linkedin.com/in/aaronmanill/"><img src="./images/linkedin.png" alt="" height="20" width="60"></a>
-        </div>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo"><img src="./images/amlogo.png" alt="" height="50" width="90" style="padding-top:10px"></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#!/">Home</a></li>
+        <li><a href="#!/projects">Projects</a></li>
+        <li><a id="topicsLink" href="#!/resume">Resume</a></li>
+        <li><a id="topicsLink" target="_blank" href="https://github.com/tizme"><img src="./images/github.png" alt="" height="20" width="20"> GitHub</a></li>
+        <li><a id="topicsLink" target="_blank" href="https://www.linkedin.com/in/aaronmanill/"><img src="./images/linkedin.png" alt="" height="20" width="60"></a></li>
 
-        <div id ="partials" ng-view>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#!/">Home</a></li>
+        <li><a href="#!/projects">Projects</a></li>
+        <li><a id="topicsLink" href="#!/resume">Resume</a></li>
+        <li><a id="topicsLink" target="_blank" href="https://github.com/tizme"><img src="./images/github.png" alt="" height="20" width="20"> GitHub</a></li>
+        <li><a id="topicsLink" target="_blank" href="https://www.linkedin.com/in/aaronmanill/"><img src="./images/linkedin.png" alt="" height="20" width="60"></a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+        <div id ="partials" class="page" ng-view>
         <!-- Partial html views here. -->
         </div>
     </div>
