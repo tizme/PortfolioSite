@@ -32,15 +32,3 @@ app.config(['$routeProvider', 'locationProvider', function($routeProvider, $loca
           });
         }
 }]);
-
-// app.run(["$rootScope","$location", function($rootScope, $location) {
-//     $rootScope.$on("$routeChangeSuccess",
-//     function() {
-//         ga("send",
-//         "pageview",
-//         $location.path())
-//     }
-//     )
-// }
-//
-// ])
