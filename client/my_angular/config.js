@@ -3,7 +3,7 @@ var app = angular.module('app', ['ngRoute', 'ngMessages', 'ngAnimate']);
 
 
 
-app.config(['$routeProvider', function($routeProvider){
+app.config(['$routeProvider', function($routeProvider, $locationProvider){
   $routeProvider
     .when('/',{
       templateUrl: 'partials/home.html',
