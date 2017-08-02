@@ -1,6 +1,9 @@
 var app = angular.module('app', ['ngRoute', 'ngMessages', 'ngAnimate']);
 
-app.config(function($routeProvider){
+
+
+
+app.config(['$routeProvider', function($routeProvider){
   $routeProvider
     .when('/',{
       templateUrl: 'partials/home.html',
@@ -17,4 +20,16 @@ app.config(function($routeProvider){
     .otherwise({
       redirectTo: '/'
     })
-})
+}]);
+
+// app.run(["$rootScope","$location", function($rootScope, $location) {
+//     $rootScope.$on("$routeChangeSuccess",
+//     function() {
+//         ga("send",
+//         "pageview",
+//         $location.path())
+//     }
+//     )
+// }
+//
+// ])
