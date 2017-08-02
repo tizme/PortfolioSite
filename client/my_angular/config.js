@@ -19,7 +19,8 @@ app.config(['$routeProvider', function($routeProvider){
     })
     .otherwise({
       redirectTo: '/'
-    })
+    });
+    $locationProvider.html5Mode(true);
 }]);
 
 // app.run(["$rootScope","$location", function($rootScope, $location) {
